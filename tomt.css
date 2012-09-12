@@ -1,0 +1,280 @@
+/*Changing readers in sidebar*/
+div.titlebox span.word {
+display:none;
+}
+
+span.subscribers span.number:after {
+content:" Sleuths";
+}
+
+p.users-online span.number:after {
+content:" Sleuths online now";
+}
+
+/*announcement sticky*/
+div.content {
+margin-top:60px;
+}
+
+.titlebox form {
+position:static;
+}
+
+.side h3:nth-of-type(1) {
+position:absolute;
+display:block;
+top:60px;
+left:0;
+background-color:#90EE90;
+border:2px solid #CCC;
+color:#000;
+text-align:left;
+margin:15px;
+border-radius:8px;
+padding:7px 40px;
+}
+
+/* Submit page stuff */
+#text-desc:after {
+display:block;
+margin-top:1em;
+content:"Remember to follow the guidelines in the right side-bar.";
+}
+
+.roundfield .title {
+display:block;
+}
+
+#title-field .title:after {
+display:block;
+color:red;
+font-size:12px;
+content:" Start your title with [TOMT] and include a media-type - e.g. [video] or [website].  Include a short description of what you are looking for.";
+}
+
+#text-field .title:after {
+display:block;
+color:red;
+font-size:12px;
+content:"Try to explain as much as you can about what you are looking for.  Include a year/date if it would help finding an answer.";
+}
+
+#text-field .gray {
+display:none;
+}
+
+/* Hatchet job of moving the submission link up the sidebar */
+.side a[href=/r/tipofmytongue/submit] {
+display:block;
+text-align:center;
+position:relative;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-bottomleft:6px;
+border:1px solid #c4dbf1;
+background:#FFF none repeat-x scroll center left;
+background-image:url(%%sprite-reddit-copy%%);
+background-position:0 -228px;
+background-repeat:repeat;
+font-size:150%;
+font-weight:bold;
+letter-spacing:-1px;
+line-height:29px;
+height:29px;
+}
+
+.side a[href=/r/tipofmytongue/submit]:hover {
+border-color:#879eb4;
+background-image:url(%%sprite-reddit-copy%%);
+background-position:0 -198px;
+background-repeat:repeat;
+}
+
+.side a[href=/r/tipofmytongue/submit] strong {
+position:absolute;
+top:-1px;
+right:-1px;
+height:31px;
+width:24px;
+background:#FFF none no-repeat scroll center left;
+background-image:url(%%sprite-reddit-copy%%);
+background-position:-76px -472px;
+background-repeat:no-repeat;
+}
+
+.side a[href=/r/tipofmytongue/submit]:hover strong {
+background-image:url(%%sprite-reddit-copy%%);
+background-position:-51px -472px;
+background-repeat:no-repeat;
+}
+
+#header:target ~ div.content
+.linkflair-solved {
+display:none;
+}
+
+.side a[href=#header] {
+border:2px solid #000;
+border-radius:3px;
+padding:3px 5px;
+background-color:#F0F8FF;
+position:absolute;
+top:25px;
+left:200px;
+z-index:99;
+}
+
+.flat-list.buttons .flairselectbtn {
+font-size:0;
+}
+
+.flat-list.buttons a.flairselectbtn:before {
+content:"Is this solved? Click here";
+font-size:14px;
+color:#000;
+padding:0 8px 0 4px;
+background-color:#90EE90;
+border-color:#006400;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+}
+
+.linkflair .linkflairlabel {
+font-size:14px!important;
+vertical-align:middle;
+}
+
+.linkflair-possiblecase .linkflairlabel {
+background-color:#FFFFE0!important;
+border-color:#000!important;
+}
+
+.linkflair-possiblecase {
+background-color:#FFe!important;
+}
+
+.linkflair-solvedcase .linkflairlabel {
+background-color:#90EE90!important;
+border-color:#000!important;
+}
+
+.linkflair-solvedcase {
+background-color:#eFe!important;
+}
+
+.linkflair-closedcase .linkflairlabel {
+background-color:#D3D3D3!important;
+border-color:#000;
+}
+
+.linkflair-closedcase {
+background-color:#D3D3D3!important;
+}
+
+.linkflair-coldcase .linkflairlabel {
+background-color:#ADD8E6!important;
+border-color:blue;
+}
+
+.linkflair-coldcase {
+background-color:#EEF!important;
+}
+
+.linkflair-notsolvedcase .linkflairlabel {
+background-color:#EEE;
+border-color:#CCC;
+}
+
+.linkflair-notsolvedcase {
+background-color:#FFF;
+}
+
+a[href=/r/tipofmytongue/search?q=flair%3A%27Solved%27&restrict_sr=on&sort=new] {
+font-size:0!important;
+}
+
+a[href=/r/tipofmytongue/search?q=flair%3A%27Solved%27&restrict_sr=on&sort=new]:after {
+background-color:#90EE90;
+border-color:#006400;
+color:#000;
+content:"Solved Cases";
+display:inline-block;
+position:relative;
+cursor:pointer;
+margin-top:2px;
+margin-left:2px;
+margin-right:2px;
+padding:4px 8px;
+border:2px solid #000!important;
+font-size:14px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+}
+
+a[href=/r/tipofmytongue/search?q=-flair%3A%27Solved%27&restrict_sr=on&sort=new] {
+font-size:0!important;
+}
+
+a[href=/r/tipofmytongue/search?q=-flair%3A%27Solved%27&restrict_sr=on&sort=new]:after {
+background-color:#EEE;
+border-color:#00008B;
+color:#000;
+content:"Unsolved Cases";
+display:inline-block;
+position:relative;
+cursor:pointer;
+margin-top:2px;
+margin-left:2px;
+margin-right:2px;
+padding:4px 8px;
+border:2px solid #000!important;
+font-size:14px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+}
+
+.titlebox .usertext-body ol {
+border-radius:4px;
+border-color:#4AFF4A;
+border-style:solid;
+border-width:1px;
+background-color:#EDFFED;
+padding-top:0;
+padding-left:35px;
+padding-right:20px;
+padding-bottom:5px;
+margin:0;
+list-style-type:upper-roman;
+text-align:justify;
+color:#000;
+}
+
+body.listing-page.moderator .flat-list.buttons a.flairselectbtn:before {
+content:"";
+padding:0;
+}
+
+body.listing-page.moderator .flat-list.buttons .flairselectbtn {
+font-size:inherit;
+}
+
+a[href=/r/tipofmytongue/comments/vhcud#nocss] {
+font-size:0!important;
+}
+
+a[href=/r/tipofmytongue/comments/vhcud#nocss]:after {
+background-color:#006400!important;
+border-color:#006400!important;
+color:#FFF!important;
+content:"How to mark a case Solved"!important;
+display:inline-block;
+position:relative;
+cursor:pointer;
+margin-top:2px;
+margin-left:2px;
+margin-right:2px;
+padding:4px 8px;
+border:2px solid #000!important;
+font-size:14px!important;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+}
