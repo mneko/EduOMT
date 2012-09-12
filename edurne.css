@@ -1,3 +1,39 @@
+/*Changing readers in sidebar*/
+div.titlebox span.word {
+display:none;
+}
+
+span.subscribers span.number:after {
+content:" Sleuths";
+}
+
+p.users-online span.number:after {
+content:" Sleuths online now";
+}
+
+/*announcement sticky*/
+div.content {
+margin-top:60px;
+}
+
+.titlebox form {
+position:static;
+}
+
+.side h7:nth-of-type(1) {
+position:absolute;
+display:block;
+top:60px;
+left:0;
+background-color:#90EE90;
+border:2px solid #CCC;
+color:#000;
+text-align:left;
+margin:15px;
+border-radius:8px;
+padding:7px 40px;
+}
+
 /* GENERAL */
 body {
 position:relative;
