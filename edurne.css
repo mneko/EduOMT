@@ -237,6 +237,7 @@ border-bottom-right-radius:0;
 }
 
 /* SIDEBAR */
+
 /*search*/
 .side {
 margin:0 20px;
@@ -286,9 +287,14 @@ padding:0 10px;
 .titlebox .bottom {
 display:none;
 }
+<<<<<<< HEAD
 
 .titlebox > h1 {
 font-size:34px;
+=======
+.side .titlebox > h1 {
+    font-size:34px;
+>>>>>>> upstream/master
 }
 
 .sidebox .spacer,.sidebox.create {
@@ -307,6 +313,29 @@ padding:10px;
 
 .icon-menu li {
 margin:0 0 5px;
+}
+.side h1 {font-size: 19px;}
+.side h2 {font-size: 16px;}
+.side h3 {font-size: 14px;}
+
+body.res-nightmode .login-form-side {
+    background-color: #111 !important;
+    color: #DDD !important;
+    border: 1px solid #DDD !important;
+}
+body.res-nightmode .login-form-side #remember-me label {
+    color: #DDD !important;
+}
+body.res-nightmode .login-form-side #remember-me input {
+    width: auto !important;
+    margin-left: 6px;
+}
+body.res-nightmode .side .login-form-side .submit {
+    padding: 4px;
+    background-color: transparent;
+}
+body.res-nightmode .side .login-form-side .submit .btn {
+    margin: auto;
 }
 
 /*sidebar buttons*/
@@ -362,7 +391,26 @@ border-left-color:#444;
 }
 
 .side #search {
+<<<<<<< HEAD
 margin-top:61px;
+=======
+    margin-top:61px;
+}
+.morelink,.morelink:hover,.side a[href*='/#btn'] {
+    font-weight:normal;
+    letter-spacing:0;
+    background:#449EF8;
+    border-color:#449EF8;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -khtml-border-radius:2px;
+    border-radius:2px;
+}
+.side a[href*='/#btn'] {
+    margin:10px 0px;
+>>>>>>> upstream/master
 }
 
 .morelink,.morelink:hover,.side a[href*=/#btn] {
@@ -493,15 +541,21 @@ margin-top:15px;
 }
 
 .side blockquote h1 {
+<<<<<<< HEAD
 font-size:16px;
 background-color:transparent!important;
 margin-bottom:15px;
+=======
+    background-color: transparent !important;
+    margin-bottom: 15px;
+>>>>>>> upstream/master
 }
 
 body.res-nightmode .side blockquote h1,body.res-nightmode .side blockquote h1 a {
 color:#EEE!important;
 }
 
+<<<<<<< HEAD
 .side blockquote h1 a {
 color:#000!important;
 cursor:default;
@@ -603,6 +657,39 @@ background-color:transparent;
 body.res-nightmode .side .login-form-side .submit .btn {
 margin:auto;
 }
+=======
+/*sidebar icons*/
+.side a[href*='#icon-'] {
+    color:#000 !important;
+    cursor:default;
+}
+.side a[href*='#icon-']:hover{
+    text-decoration:none;
+}
+.side a[href*='#icon-']::before {
+    display:inline-block;
+    height:16px; width:16px;
+    content:'';
+    margin:0 5px -1px 0;
+    background: url(%%sprites-05%%) 30px 30px no-repeat;
+}
+.side a[href='#icon-exclamation']::before  {background-position: -16px -32px;}
+.side a[href='#icon-bell']::before         {background-position: -35px -32px;}
+.side a[href='#icon-error']::before        {background-position: -54px -32px;}
+.side a[href='#icon-star']::before         {background-position: -73px -32px;}
+.side a[href='#icon-lightbulb']::before    {background-position: -16px -51px;}
+.side a[href='#icon-clock']::before        {background-position: -35px -51px;}
+.side a[href='#icon-information']::before  {background-position: -54px -51px;}
+.side a[href='#icon-check']::before        {background-position: -73px -51px;}
+.side a[href='#icon-help']::before         {background-position: -16px -70px;}
+.side a[href='#icon-cross']::before        {background-position: -35px -70px;}
+.side a[href='#icon-note']::before         {background-position: -54px -70px;}
+.side a[href='#icon-time']::before         {background-position: -73px -70px;}
+.side a[href='#icon-eye']::before          {background-position: -16px -89px;}
+.side a[href='#icon-comments']::before     {background-position: -35px -89px;}
+.side a[href='#icon-smile']::before        {background-position: -54px -89px;}
+.side a[href='#icon-unhappy']::before      {background-position: -73px -89px;}
+>>>>>>> upstream/master
 
 /* CONTENT */
 .sitetable {
@@ -808,9 +895,28 @@ font-family:verdana, arial, sans-serif;
 
 /*code styling*/
 .usertext-body pre {
+<<<<<<< HEAD
 margin:10px 0;
 padding:10px;
 color:#222!important;
+=======
+    margin:10px 0;
+    padding:10px;
+    color: #222 !important;
+}
+.usertext-body pre, .usertext-body p > code {
+    background:#f7f7f7;
+    border:1px solid #ccc;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -khtml-border-radius:2px;
+    border-radius:2px;
+    font-size:11px;
+    color: #222 !important;
+    overflow: scroll;
+>>>>>>> upstream/master
 }
 
 .usertext-body pre,.usertext-body p > code {
